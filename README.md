@@ -40,8 +40,4 @@ Feel free to reach out to me via email or connect with me on LinkedIn.
 - **Email**: [brianhyunkam@gmail.com](mailto:brianhyunkam@gmail.com)
 - **LinkedIn**: [Brian Kam](https://www.linkedin.com/in/brian-kam-297144277/)
 
-![LinkedIn](./assets/linkedin.png) ![GitHub](./assets/github.png)
-
----
-
 Thank you for visiting my portfolio!
