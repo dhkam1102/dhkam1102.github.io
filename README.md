@@ -1,6 +1,5 @@
 # dhkam1102.github.io
 
-Welcome to my personal portfolio website! Built based on HTML, CSS, JS. Thank you for viewing!!
 
 # Brian Kam's Portfolio
 
