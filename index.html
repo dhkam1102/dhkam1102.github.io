@@ -14,10 +14,10 @@
     <div class="logo">Brian Kam Portfolio</div>
     <div>
       <ul class="nav-links">
-        <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Skill</a></li>
+        <!-- <li><a href="#projects">Projects</a></li> -->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -51,54 +51,163 @@
         <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/brian-kam-297144277/'" />
-        <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/yourusername'" />
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/dhkam1102'" />
+        <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/dhkam1102'" />
       </div>
     </div>
   </section>
   
   <section id="about">
-    <div class="intro">
+    <div class="intro" style="margin-bottom: 20px;">
       <img src="./assets/mySecondPhoto.jpeg" alt="Brian Kam" class="profile-pic">
-      <h1>About Me</h1>
-      <p>Hi, I'm Brian Kam! A Software Engineer from California.</p>
+      <!-- <h1>About Me</h1>
+      <p>Hi, I'm Brian Kam! A Software Engineer from California.</p> -->
     </div>
     
-    <div class="summary">
-      <h2>Professional Summary</h2>
-      <p>I’m currently pursuing a Bachelor's degree in Computer Science at the University of California,
-         Irvine, with an expected graduation in 2024. Throughout my studies, I've gained hands-on experience
-          in web development, learning how to create responsive and user-friendly web applications. 
-          I have a strong interest in artificial intelligence and machine learning. Besides my technical skills, 
-          I'm fluent in English and Korean, and I have some proficiency in Japanese. I’m passionate about continuous 
-          learning and development, which is reflected in my active contributions on GitHub, where I engage with the tech community and improve my skills.
-
-      </p>
+    <div class="summary" styple = "margin-top: 50px;">
+      <h2>Hi, I'm Brian Kam! A Software Engineer from California.</h2>
+      <p>I’m currently pursuing a Bachelor's degree in Computer Science at UCI.</p>
+      <p>My current stronges intereset is Cloud architecture and backend.</p>
+      <p>Besides my technical skills,  I'm fluent in English and Korean, and Japanese.</p>
     </div>
     
-    <div class="experience-education">
-      <h2>Experience & Education</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>B.S. in Computer Science</h3>
-          <p>University of California, Irvine</p>
-          <p>Sep 2020 - expected graduation 2024</p>
+    <div class="timeline">
+      <!-- Timeline item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon bg-blue-500">
+          <img src="/assets/uci.png" alt="Icon" class="w-8 h-8">
+        </div>
+        <div class="timeline-content bg-gray-800 text-white">
+          <h3 class="text-xl font-semibold">University of California</h3>
+          <p class="text-sm text-gray-400">BS in Computer Science</p>
+          <ul class="mt-2">
+          </ul>
+          <span class="text-sm text-gray-400">September 2020 – March 2025 </span>
         </div>
       </div>
-    </div>
-    
-    <div class="interests">
-      <h2>Personal Interests</h2>
-      <p>When I'm not coding, I love playing tennis, golf, and going to the gym.</p>
-      <div class="hobbies-images">
-        <img src="https://www.bhf.org.uk/-/media/images/information-support/heart-matters/heart-matters/summer-2018/activity/tennis_racket_balls_ss_0618_noexp_620x400.jpg?rev=c18a71fbd05e4a91b4bbc40af01aafaa" alt="Tennis" class="interest-photo">
-        <img src="https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Golf" class="interest-photo">
-        <img src="https://d2rhgntcjgwkhf.cloudfront.net/studios/163610/gallery_images/1128738/cropped_DSC00043.jpg?1653144890" alt="Gym" class="interest-photo">
+      <!-- Timeline item 2 -->
+
+      <div class="timeline-item">
+        <div class="timeline-icon bg-blue-500">
+          <img src="/assets/likelion.png" alt="Icon" class="w-8 h-8">
+        </div>
+        <div class="timeline-content bg-gray-800 text-white">
+          <h3 class="text-xl font-semibold">LikeLion</h3>
+          <p class="text-sm text-gray-400">Co-founder of LikeLion UCI</p>
+          <ul class="mt-2">
+            <li>  Co-founded University of California Irvine’s first coding education platform, focusing on enterprise-level programming and system architecture, facilitating peer-to-peer learning and hands-on project collaboration within a corporate framework.</li>
+          </ul>
+          <span class="text-sm text-gray-400">August 2022 – August 2023 </span>
+        </div>
       </div>
+    
+      <!-- Timeline item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-icon bg-green-500">
+          <img src="/assets/evemetalogo.png" alt="Icon" class="w-8 h-8">
+        </div>
+        <div class="timeline-content bg-gray-800 text-white">
+          <h3 class="text-xl font-semibold">EVEMETA</h3>
+          <p class="text-sm text-gray-400">Software Engineer Intern</p>
+          <ul class="mt-2">
+            <li> Enhanced corporate-level backend operations: Developed and deployed Go-based microservices that improved system reliability and performance within a mid-scale IT environment, ensuring secure data transactions across different business systems.</li>
+            <li>Developed corporate-grade video player: Designed a highly reliable video player using Flutter and libwebRTC, incorporating features such as play/pause, refresh, and advanced noise/haze reduction, aimed at improving user experience across a broad user base.</li>
+            <li>Built scalable content aggregation systems: Created a content retrieval and display system that efficiently aggregated news articles from multiple sources, optimizing for memory usage and reducing the dependency on traditional databases, thus improving data availability and consistency across the organization.</li>
+
+          </ul>
+          <span class="text-sm text-gray-400">July 2024 – Present</span>
+        </div>
+      </div>
+    
+      <!-- Add more timeline items as needed -->
     </div>
     
 
+    <div class="interests">
+      <h1>More about my life!!</h1>
+      <!-- <h2>When I'm not working, these are the things I love to do.</h2> -->
+
+      <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+          <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 p-2 rounded-full">
+              &lt;
+          </button>
+          <img id="carousel-image" src="https://source.unsplash.com/random/800x400" alt="Carousel Image" class="w-full h-64 object-cover">
+          <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 p-2 rounded-full">
+              &gt;
+          </button>
+      </div>
+
+      <div class="flex justify-center mt-4">
+          <span class="dot bg-gray-400 w-3 h-3 rounded-full mx-1 cursor-pointer"></span>
+          <span class="dot bg-gray-400 w-3 h-3 rounded-full mx-1 cursor-pointer"></span>
+          <span class="dot bg-gray-400 w-3 h-3 rounded-full mx-1 cursor-pointer"></span>
+          <span class="dot bg-gray-400 w-3 h-3 rounded-full mx-1 cursor-pointer"></span>
+      </div>
+
+      <div class="mt-4 p-4 bg-white shadow-md rounded-lg">
+          <p id="description">Some space for text so I can write some description about this image.</p>
+      </div>
+  </div>
+
+  <!-- 900x450 -->
+  <script type="module">
+      const images = [
+          '/assets/playtennis.png',
+          '/assets/surfing.png',
+          '/assets/babydog.png',
+          '/assets/800x400.png'
+      ];
+      const descriptions = [
+          'Tennis lover, still working on my game, it’s all about the fun. Always down for a match!!',
+          'Surfing with friends, the beach and ocean is always a good idea. Always need sunscreen!!',
+          'Meet Brie. Brie’s my go-to for good company and better hugs. Perfect size to cuddle with',
+          'Gym time!! Always stay active and feeling good. It’s my way of keeping positive mind.'
+      ];
+      let currentIndex = 0;
+
+      const imageElement = document.getElementById('carousel-image');
+      const descriptionElement = document.getElementById('description');
+      const dots = document.querySelectorAll('.dot');
+
+      function updateCarousel() {
+          imageElement.src = images[currentIndex];
+          descriptionElement.textContent = descriptions[currentIndex];
+          dots.forEach((dot, index) => {
+              dot.classList.toggle('bg-blue-500', index === currentIndex);
+              dot.classList.toggle('bg-gray-400', index !== currentIndex);
+          });
+      }
+
+      document.getElementById('prev').addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          updateCarousel();
+      });
+
+      document.getElementById('next').addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % images.length;
+          updateCarousel();
+      });
+
+      dots.forEach((dot, index) => {
+          dot.addEventListener('click', () => {
+              currentIndex = index;
+              updateCarousel();
+          });
+      });
+
+      updateCarousel();
+  </script>
+
     
+
+
+
+
+
+
+
+
+
 
   </section>
   
@@ -114,6 +223,13 @@
               <div>
                 <h3>Python</h3>
                 <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/Go-Logo_LightBlue-removebg-preview.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Go</h3>
+                <p>Intermediate</p>
               </div>
             </article>
             <article>
@@ -178,7 +294,27 @@
                 <p>Intermediate</p>
               </div>
             </article>
-            
+            <article>
+              <img src="./assets/Google-Cloud-Platform-GCP-logo-removebg-preview.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>GCP</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/kubernetes-removebg-preview.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Kubernestes</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/tomcat-removebg-preview.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tomcat</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
             <article>
               <img src="./assets/linux-icon.svg" alt="Experience icon" class="icon" />
               <div>
@@ -204,7 +340,9 @@
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" /> -->
+  
+  
   </section>
   
   <!-- <section id="projects">
@@ -247,9 +385,16 @@
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section> -->
   
-  <section id="contact">
-    <p class="section__text__p1">Contact me anytime!</p>
+
+  <!-- <section id="contact">
+    
     <h1 class="title">Contact Me</h1>
+    <div class="scroll-message" data-aos="fade-up">
+      <p>Let’s connect and build something great together.</p>
+    </div>
+    <hr class="section-divider">
+
+
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
@@ -260,9 +405,9 @@
         <p><a href="https://www.linkedin.com/in/brian-kam-297144277">LinkedIn</a></p>
       </div>
     </div>
-  </section>
+  </section> -->
   
-  <footer>
+  <!-- <footer>
     <nav>
       <div class="nav-links-container">
         <ul class="nav-links">
@@ -273,7 +418,7 @@
         </ul>
       </div>
     </nav>
-  </footer>
+  </footer> -->
   <script src="script.js"></script>
 </body>
 </html>
