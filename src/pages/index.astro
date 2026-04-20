@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import Photos from '../components/Photos.astro';
+import Contact from '../components/Contact.astro';
+import { site } from '../data/site';
+---
+
+<Layout>
+  <Hero />
+
+  <section id="about" class="section scroll-mt-16">
+    <div class="container-page">
+      <SectionHeading
+        eyebrow="About"
+        title="Code, curiosity, and too many side projects."
+      />
+      <div class="grid gap-10 md:grid-cols-[1.4fr_1fr] md:items-center">
+        <div class="space-y-4 text-base leading-relaxed text-slate-700 dark:text-slate-300">
+          <p>I'm trying to build things.</p>
+          <p>I care about making products that are simple, useful, and easy to use.</p>
+          <p>Lately, I've been focused on speed, clarity, and actually shipping.</p>
+          <p>Interested in developer tools, product thinking, and better workflows.</p>
+          <p class="pt-2">
+            <a href="/resume" class="link-underline">See full resume →</a>
+          </p>
+        </div>
+        <div class="overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800">
+          <img
+            src={site.aboutImage}
+            alt={site.name}
+            loading="lazy"
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Photos />
+
+  <section id="contact" class="section">
+    <div class="container-page">
+      <Contact />
+    </div>
+  </section>
+</Layout>

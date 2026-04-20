@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../data/projects';
+---
+
+<Layout title="Projects — Brian Kam" description="Projects by Brian Kam — backend, cloud, search, and testing infra.">
+  <section class="section">
+    <div class="container-page">
+      <SectionHeading
+        eyebrow="Projects"
+        title="Things I've built."
+        subtitle="A short, visual list. Hover a card to preview."
+      />
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {projects.map((p) => <ProjectCard project={p} />)}
+      </div>
+    </div>
+  </section>
+
+</Layout>

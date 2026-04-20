@@ -1,0 +1,71 @@
+---
+import SectionHeading from './SectionHeading.astro';
+
+interface Photo {
+  src: string;
+  alt: string;
+  span?: string;
+  video?: boolean;
+}
+
+const photos: Photo[] = [
+  {
+    src: '/assets/photo-1.jpg',
+    alt: 'Photo one',
+    span: 'md:col-span-2 md:row-span-2',
+  },
+  { src: '/assets/photo-2.jpg', alt: 'Photo two' },
+  { src: '/assets/photo-3.MOV', alt: 'Photo three', video: true },
+  { src: '/assets/photo-4.jpg', alt: 'Photo four' },
+  { src: '/assets/photo-5.jpg', alt: 'Photo five' },
+  { src: '/assets/photo-6.jpg', alt: 'Photo six' },
+];
+---
+
+<section id="photos" class="section scroll-mt-16">
+  <div class="container-page">
+    <SectionHeading
+      eyebrow="Off the clock"
+      title="Life outside the terminal."
+      subtitle="A few frames from places, people, and hobbies I care about."
+    />
+
+    <ul
+      role="list"
+      class="grid auto-rows-[140px] grid-cols-2 gap-3 sm:auto-rows-[180px] sm:gap-4 md:grid-cols-3 md:auto-rows-[200px] lg:auto-rows-[220px]"
+    >
+      {
+        photos.map((photo) => (
+          <li
+            class:list={[
+              'group relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 dark:border-slate-800 dark:bg-slate-900',
+              photo.span,
+            ]}
+          >
+            {photo.video ? (
+              <video
+                src={photo.src}
+                autoplay
+                muted
+                loop
+                playsinline
+                class="h-full w-full object-cover"
+              />
+            ) : (
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                loading="lazy"
+                decoding="async"
+                class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+              />
+            )}
+            <div class="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent p-3 opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 motion-reduce:transition-none">
+              <p class="text-xs font-medium text-slate-100">{photo.alt}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import Timeline from '../components/Timeline.astro';
+import SkillBubbles from '../components/SkillBubbles.astro';
+import { site } from '../data/site';
+---
+
+<Layout title="Resume — Brian Kam" description="Brian Kam's resume — experience, skills, education.">
+  <section class="section">
+    <div class="container-page">
+      <div class="flex flex-col items-start gap-5">
+        <SectionHeading
+          eyebrow="Resume"
+          title="Brian Kam — Software Engineer"
+          subtitle={`${site.location} · ${site.email}`}
+        />
+        <div class="flex gap-3">
+          <a href={site.resume} download class="btn-accent">Download PDF</a>
+          <a href={site.resume} target="_blank" rel="noreferrer" class="btn-ghost">Open in new tab</a>
+        </div>
+      </div>
+
+      <div class="mt-8 overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
+        <object
+          data={site.resume}
+          type="application/pdf"
+          class="h-[420px] w-full"
+          aria-label="Brian Kam resume PDF preview"
+        >
+          <div class="flex h-[420px] items-center justify-center text-sm text-slate-500 dark:text-slate-400">
+            PDF preview not available in this browser —{' '}
+            <a href={site.resume} class="ml-1 link-underline">download it here.</a>
+          </div>
+        </object>
+      </div>
+
+      <div class="mt-14 space-y-14">
+        <div>
+          <h3 class="mb-6 font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+            Experience & Education
+          </h3>
+          <Timeline />
+        </div>
+
+        <div>
+          <h3 class="mb-6 font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+            Skills
+          </h3>
+          <SkillBubbles />
+        </div>
+
+      </div>
+    </div>
+  </section>
+</Layout>
